@@ -1,0 +1,92 @@
+/* Variable */
+:root {
+    --bg: #110031;
+    --primary: #4d229e;
+}
+
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Start here */
+body {
+    background-color: var(--bg);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.root {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.25rem 0;
+    margin-bottom: 2rem;
+}
+
+nav > * {
+    width: 33.3%;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+}
+
+.links ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+header {
+    width: 100%;
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+main {
+    width: 100%;
+}
+
+.playoff {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+
+.playoff-img {
+    width: 48%;
+    aspect-ratio: 1/2;
+    background-color: gray;
+}
+
+.playoff-text {
+    width: 48%;
+}
+
+.playoff-content:nth-child(1) {
+    margin-bottom: 0.25rem;
+}
